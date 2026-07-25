@@ -176,7 +176,12 @@ h4 {
   display: flex;
   gap: 20px;
 }
-
+.img_link a:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+  background: rgba(168, 85, 247, 0.2);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
 .card__info {
   margin-left: 30px;
 }
@@ -199,9 +204,6 @@ h4 {
   line-height: 1.5;
   margin-bottom: 0;
 }
-.card__description p + p {
-  margin-top: -50px;
-}
 footer {
   color: #ffffff;
   text-align: center;
@@ -219,6 +221,7 @@ footer {
 }
 .correo:hover {
   color: #d8673a;
+  transform: translateY(-5px);
 }
 .social-media {
   gap: 80px;
