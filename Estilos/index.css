@@ -148,6 +148,9 @@ h4 {
 .box_two {
   background-color: #1c1c1c;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .box__image-container {
   position: relative;
@@ -167,18 +170,18 @@ h4 {
 .card__content {
   display: flex;
   flex-direction: column;
-  position: relative;
+  flex: 1;
+  padding: 30px;
 }
 .card__info {
-  padding: 0 30px;
+  outline: 1px solid #2b2926; /*utilizar para media querys*/
 }
 .card__title {
   color: #ffffff;
   font-family: "Open-Sans-bold";
   font-size: 24px;
   line-height: 1.5;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 .card__description {
   color: #ffffff;
@@ -186,14 +189,13 @@ h4 {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 .img_link {
-  position: absolute;
   display: flex;
   gap: 20px;
-  margin-top: 288px;
-  margin-left: 30px;
+  margin-top: auto;
 }
 .img_link a:hover {
   transition: all 0.3s ease;
