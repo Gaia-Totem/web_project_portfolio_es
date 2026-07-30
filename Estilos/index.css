@@ -49,21 +49,13 @@ body {
 }
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "nombre FOTO"
     "oficio FOTO"
     "INFO FOTO"
     "nav FOTO";
-  box-sizing: border-box;
-}
-.FOTO {
-  max-width: 387px;
-  width: 100%;
-  height: auto;
-  grid-area: FOTO;
-  margin-top: 40px;
-  margin-left: 20px;
+  column-gap: 20px;
 }
 .nombre {
   grid-area: nombre;
@@ -78,6 +70,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  margin-top: 0;
 }
 .oficio {
   grid-area: oficio;
@@ -87,6 +80,12 @@ body {
   opacity: 0.5;
   margin-bottom: 30px;
 }
+.FOTO {
+  grid-area: FOTO;
+  max-width: 100%;
+  justify-self: end;
+  align-self: start;
+}
 .INFO {
   grid-area: INFO;
   font-size: 18px;
@@ -94,7 +93,7 @@ body {
   line-height: 1.5;
   display: flex;
   margin-bottom: 30px;
-  width: 793px;
+  width: 100%;
 }
 .nav {
   grid-area: nav;
@@ -124,6 +123,9 @@ body {
 .nav-links a:hover {
   color: #d8673a; /*revisar cada uno al hcaer clic*/
 }
+.nav-links-list {
+  flex-shrink: 0;
+}
 main {
   margin-bottom: 100px;
 }
@@ -138,9 +140,11 @@ h4 {
   margin-top: 54px;
   margin-bottom: 103px;
 }
+.Tools img {
+  margin: 0 auto;
+}
 .box-proyects {
   max-width: 2000px;
-  height: 680px;
   display: flex;
   gap: 20px;
 }
@@ -150,7 +154,6 @@ h4 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .box__image-container {
   position: relative;
@@ -251,4 +254,103 @@ footer {
 .social-media__link:hover .social-media__icon {
   transform: translateY(-4px) scale(1.1);
   box-shadow: 0 0 18px rgba(170, 131, 233, 0.6);
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 40px;
+    padding-bottom: 102px;
+  }
+  .nombre {
+    font-size: 58px;
+    margin-top: 0;
+  }
+  .FOTO {
+    height: auto;
+  }
+  .Tools {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .box-proyects {
+    display: flex;
+    flex-direction: column;
+  }
+  .box_one,
+  .box_two {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    padding: 20px;
+    padding-bottom: 91px;
+  }
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "FOTO"
+      "nombre"
+      "oficio"
+      "INFO"
+      "nav";
+    row-gap: 20px;
+  }
+  .nombre {
+    font-size: 36px;
+  }
+  .oficio {
+    font-size: 16px;
+  }
+  .INFO {
+    font-size: 16px;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  h3,
+  h4 {
+    font-size: 28px;
+  }
+  .Tools {
+    margin-top: 30px;
+    margin-bottom: 59.8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .Tools img {
+    width: 30px;
+    height: auto;
+  }
+  .card__content {
+    padding: 20px;
+  }
+  .card__title {
+    font-size: 20px;
+  }
+  .card__description {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .icon-mini {
+    width: 20px;
+    height: 20px;
+  }
+  .contacto {
+    font-size: 28px;
+  }
+  .social-media {
+    gap: 40px;
+  }
+
+  .social-media__link {
+    padding: 0;
+  }
+  .social-media__icon {
+    width: 24px;
+    border-radius: 0;
+  }
 }
