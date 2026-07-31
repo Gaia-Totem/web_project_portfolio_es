@@ -80,6 +80,9 @@ body {
   opacity: 0.5;
   margin-bottom: 30px;
 }
+.oficio-descripcion::after {
+  content: " |";
+}
 .FOTO {
   grid-area: FOTO;
   max-width: 100%;
@@ -194,6 +197,8 @@ h4 {
   line-height: 1.5;
   margin-top: 20px;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 .img_link {
   display: flex;
@@ -267,20 +272,24 @@ footer {
   .FOTO {
     height: auto;
   }
-  .Tools {
-    margin-top: 40px;
-    margin-bottom: 80px;
-  }
-
-  .box-proyects {
+  .oficio-descripcion::after {
+    content: "";
     display: flex;
-    flex-direction: column;
-  }
-  .box_one,
-  .box_two {
-    width: 100%;
   }
 }
+.Tools {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.box-proyects {
+  display: flex;
+  flex-direction: column;
+}
+.box_one,
+.box_two {
+  width: 100%;
+}
+
 @media screen and (max-width: 320px) {
   body {
     padding: 20px;
@@ -305,6 +314,7 @@ footer {
   .INFO {
     font-size: 16px;
   }
+
   .nav-links {
     display: flex;
     flex-direction: column;
