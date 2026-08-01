@@ -1,26 +1,26 @@
 @font-face {
   font-family: "Archivo-Black";
   src:
-    url(../FUENTES/fonts/fonts/ArchivoBlack-Regular.woff) format("woff"),
-    url(../FUENTES/fonts/fonts/ArchivoBlack-Regular.woff2) format("woff2");
+    url(../fonts/fonts/ArchivoBlack-Regular.woff) format("woff"),
+    url(../fonts/fonts/ArchivoBlack-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Open-Sans-regular";
   src:
-    url(../FUENTES/fonts/fonts/OpenSans-Regular.woff) format("woff"),
-    url(../FUENTES/fonts/fonts/OpenSans-Regular.woff2) format("woff2");
+    url(../fonts/fonts/fonts/OpenSans-Regular.woff) format("woff"),
+    url(../fonts/fonts/fonts/OpenSans-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Open-Sans-bold";
   src:
-    url(../FUENTES/fonts/fonts/OpenSans-Bold.woff) format("woff"),
-    url(../FUENTES/fonts/fonts/OpenSans-Bold.woff2) format("woff2");
+    url(../fonts/fonts/fonts/OpenSans-Bold.woff) format("woff"),
+    url(../fonts/fonts/fonts/OpenSans-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Open-Sans-Semibold";
   src:
-    url(../FUENTES/fonts/fonts/OpenSans-SemiBold.woff) format("woff"),
-    url(../FUENTES/fonts/fonts/OpenSans-SemiBold.woff2) format("woff2");
+    url(../fonts/fonts/fonts/OpenSans-SemiBold.woff) format("woff"),
+    url(../fonts/fonts/fonts/OpenSans-SemiBold.woff2) format("woff2");
 }
 body {
   max-width: 1440px;
